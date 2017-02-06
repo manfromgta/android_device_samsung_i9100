@@ -24,10 +24,5 @@
         "repository": "LineageOS/android_packages_apps_SamsungServiceMode",
         "target_path": "packages/apps/SamsungServiceMode",
 	"branch": "cm-14.1"
-    },
-    {
-        "repository": "LineageOS/android_external_stlport",
-        "target_path": "external/stlport",
-	"branch": "cm-14.1"
     }
 ]
