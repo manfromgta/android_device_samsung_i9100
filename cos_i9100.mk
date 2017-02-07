@@ -20,13 +20,19 @@
 # details, it only fundamentally contains two inherit-product
 # lines, full and toro, hence its name.
 #
+# Screen Resolution for the Bootanimation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+
+# Inherit Cosmic-OS common Makefile.
+$(call inherit-product, vendor/cos/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/samsung/i9100/i9100.mk)
 
 # Discard inherited values and use our own instead.
-PRODUCT_NAME := full_i9100
+PRODUCT_NAME := cos_i9100
 PRODUCT_DEVICE := i9100
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
